@@ -1,0 +1,9 @@
+{
+  "OnConnectHandlerLambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:881527389101:function:aws-websock-test-dev-OnConnectHandler:5",
+  "ApiLambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:881527389101:function:aws-websock-test-dev-api:5",
+  "OnDisconnectLambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:881527389101:function:aws-websock-test-dev-OnDisconnect:6",
+  "HttpApiId": "vfhbgcm3ue",
+  "ServiceEndpointWebsocket": "wss://tcwlil9nol.execute-api.us-east-1.amazonaws.com/dev",
+  "ServerlessDeploymentBucketName": "aws-websock-test-dev-serverlessdeploymentbucket-13bb5amqtba05",
+  "HttpApiUrl": "https://vfhbgcm3ue.execute-api.us-east-1.amazonaws.com"
+}
