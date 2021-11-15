@@ -46,59 +46,7 @@ view model =
             div [] [ text "Loading" ]
 
         Just mainProfile ->
-            div []
-                [ nav [ id "topNav", class "navbar navbar-expand-md navbar-light" ]
-                    [ div [ class "container" ]
-                        [ a [ class "navbar-brand", href "/" ]
-                            [ img [ src mainProfile.usernameLogo, width 30, height 30, class "d-inline-block align-top", alt "Logo" ] []
-                            , span [] [ text mainProfile.username ]
-                            ]
-                        , button [ class "navbar-toggler", type_ "button", attribute "data-toggle" "collapse", attribute "data-target" "#navbarNav", attribute "aria-controls" "navbarNav", attribute "aria-expanded" "false", attribute "aria-label" "Toggle navigation" ]
-                            [ span [ class "navbar-toggler-icon" ] []
-                            ]
-                        , div [ class "collapse navbar-collapse text-center", id "navbarNav" ]
-                            [ ul [ class "navbar-nav ml-auto" ]
-                                (List.map
-                                    (\nbi ->
-                                        li [ class "nav-item" ]
-                                            [ a [ class "nav-link", href nbi.url ] [ text nbi.name ]
-                                            ]
-                                    )
-                                    model.navButtons
-                                )
-                            ]
-                        ]
-                    ]
-                , div [ class "container" ]
-                    [ div [ class "row justify-content-center my-3" ]
-                        [ div [ class "col-5" ]
-                            [ img [ src mainProfile.imageUrl, class "img-fluid" ] []
-                            ]
-                        ]
-                    , div [ class "row justify-content-center mb-3" ]
-                        [ div [ class "col-md-9 text-center" ]
-                            [ h1 [ id "hometext", class "font-weight-bold" ] [ text mainProfile.title ]
-                            , i [] [ text mainProfile.byline ]
-                            ]
-                        ]
-                    , h2 [ class "mt-5" ] [ text "Portfolio" ]
-                    , hr [] []
-                    , div [ class "row" ]
-                        (List.map
-                            (\item ->
-                                div [ class "col-lg-4 col-md-6" ]
-                                    [ a [ href item.href ]
-                                        [ img [ src item.imageUrl, class "img-fluid mb-2" ] []
-                                        ]
-                                    , h3 [] [ text item.title ]
-                                    , p [] [ text item.byline ]
-                                    ]
-                            )
-                            model.items
-                        )
-                    ]
-                ]
-
+            div [] [text "Rock Paper Scissors"]
 
 initialModel : Model
 initialModel =
